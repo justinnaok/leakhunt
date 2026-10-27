@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "justinnaok-leakhunt"
+version = "0.1.0"
+description = "对评测样本做近重复匹配，标出与已知语料高度重合的样本"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "justinnaok" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://justinnaok.github.io"
+Repository = "https://github.com/justinnaok/leakhunt"
+Issues = "https://github.com/justinnaok/leakhunt/issues"
+
+[project.scripts]
+leakhunt = "leakhunt:main"
+
+[tool.setuptools]
+py-modules = ["leakhunt"]
